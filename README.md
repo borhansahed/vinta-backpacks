@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Vinta Backpacks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site : https://chic-fudge-49b63c.netlify.app/
 
 ## Available Scripts
 
