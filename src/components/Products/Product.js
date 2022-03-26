@@ -17,7 +17,7 @@ const Product = () => {
       const newCart = [...cart , product]
       
           if (newCart.length >4){
-            return alert("cannot add more than 4");
+            return alert("cannot add more than 4 backpacks");
           }
       
       
@@ -25,8 +25,8 @@ const Product = () => {
 
     }
    const  chooseOne = ()=> {
-    //    const myArray = [...cart, addToCart()]
-    console.log('selected')
+  
+  
 
 
    }
@@ -36,16 +36,19 @@ const Product = () => {
     
    }
     return (
-        <div className='product-container'>
-        <div className='backpacks-item'>
-        {
+        <div className=' product-container '>
+        <div className='  backpacks-item'>
+      
+      {
               product.map(item => <Backpack key={item.id} item={item}
               addToCart={addToCart} > </Backpack>)
                             
           }
+     
+      
         
         </div>
-        <div className='cart-container shadow-lg'>
+        <div className='  cart-container shadow-lg '>
         <h2> Selected Backpacks</h2>
         
        {
