@@ -15,20 +15,29 @@ const Product = () => {
 
     const addToCart = (product) => {
       const newCart = [...cart , product]
+      console.log(newCart)
       
       setCart(newCart);
 
-
     }
-   
+   const  chooseOne = ()=> {
+    //    const myArray = [...cart, addToCart()]
+    console.log('selected')
+
+
+   }
+   const  chooseAgain = ()=> {
+      const array = [''];
+      setCart(array);
+    
+   }
     return (
         <div className='product-container'>
         <div className='backpacks-item'>
         {
               product.map(item => <Backpack key={item.id} item={item}
-              addToCart={addToCart} >
-
-                                            </Backpack>)
+              addToCart={addToCart} > </Backpack>)
+                            
           }
         
         </div>
@@ -41,8 +50,8 @@ const Product = () => {
              item={item}></Cart>)
        } 
 
-           <button className='btn btn-outline-success'>Choose one for me </button>
-           <button className='btn btn-outline-danger d-block mt-2'>Choose again</button>
+           <button onClick={chooseOne}  className='btn btn-outline-success'>Choose one for me </button>
+           <button onClick={chooseAgain} className='btn btn-outline-danger d-block mt-2'>Choose again</button>
         </div>
         </div>
     );
