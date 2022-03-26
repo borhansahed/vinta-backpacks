@@ -17,6 +17,13 @@
 .backpack-item h4 , p {
     margin-left: 26px;
 }
+.btn-cart{
+    display: flex;
+    
+    justify-content: center;
+   line-height: 4px;
+   align-items: center;
+}
 
 /* @media screen and(max-width:668px){
     .backpack-item{
