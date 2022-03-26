@@ -15,7 +15,11 @@ const Product = () => {
 
     const addToCart = (product) => {
       const newCart = [...cart , product]
-      console.log(newCart)
+      
+          if (newCart.length >4){
+            return alert("cannot add more than 4");
+          }
+      
       
       setCart(newCart);
 
@@ -27,8 +31,8 @@ const Product = () => {
 
    }
    const  chooseAgain = ()=> {
-      const array = [''];
-      setCart(array);
+     
+      setCart([]);
     
    }
     return (
