@@ -10,6 +10,9 @@
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     margin-left:5rem ;
+
+ 
+ 
   
 }
 .cart-container{
@@ -20,3 +23,10 @@
     padding: 20px;
     border-radius: 20px;
 }
+/* @media screen and(max-width:668px){
+    .backpacks-item{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    
+} */

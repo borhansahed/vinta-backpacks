@@ -2,20 +2,26 @@
  border: 2px solid whitesmoke;
  max-width: 320px;
  margin: 20px 0px;
+ border-radius: 15px;
+ 
 }
-.picture{
-    
-}
+
 .backpack-item img{
 
   width: 260px;
   height: 220px;
+ margin: 7px 26px;
+ border-radius: 5px;
   
 }
+.backpack-item h4 , p {
+    margin-left: 26px;
+}
+
 /* @media screen and(max-width:668px){
     .backpack-item{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
     }
     
 } */
