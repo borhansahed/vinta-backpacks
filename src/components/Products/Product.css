@@ -1,6 +1,7 @@
 .product-container{
     display: flex;
     margin: 5rem 0px;
+  
    
     
 }
@@ -9,11 +10,13 @@
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     margin-left:5rem ;
-    
-    
- 
-
+  
 }
 .cart-container{
+    color: white;
     margin-right: 1rem;
+    background-color: #243B55;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
 }

@@ -1,0 +1,21 @@
+.backpack-item {
+ border: 2px solid whitesmoke;
+ max-width: 320px;
+ margin: 20px 0px;
+}
+.picture{
+    
+}
+.backpack-item img{
+
+  width: 260px;
+  height: 220px;
+  
+}
+/* @media screen and(max-width:668px){
+    .backpack-item{
+        display: flex;
+        flex-direction: column;
+    }
+    
+} */
