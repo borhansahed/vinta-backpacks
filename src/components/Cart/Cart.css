@@ -1,6 +1,10 @@
-button{
-    display: block;
+.selected-backpacks{
+    display: flex;
+ align-items: center;
+    margin: 0px 5px 15px 0px;
+    width: 10vh;
 }
-div{
-    margin: 20px 0px;
+.selected-backpacks img{
+    width: 8vh;
+    border-radius: 60px;
 }

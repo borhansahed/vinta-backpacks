@@ -2,13 +2,12 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = (props) => {
+    // const {name }=props.cart
     return (
-        <div>
-            <h2> Selected Backpacks</h2>
-            
-            <button className='btn btn-outline-success'>Choose one for me </button>
-            <button className='btn btn-outline-danger d-block mt-2'>Choose again</button>
-        </div>
+        <div className='selected-backpacks'>
+            <img src={props.item.picture}alt="" />
+             <p>{props.item.name}</p>
+            </div>
     );
 };
 

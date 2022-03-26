@@ -19,13 +19,13 @@
     color: white;
     margin-right: 1rem;
     background-color: #243B55;
-    height: 300px;
+  max-height: 50vh;
     padding: 20px;
     border-radius: 20px;
 }
 /* @media screen and(max-width:668px){
     .backpacks-item{
-        display: grid;
+        flex-grow: 0;
         grid-template-columns: repeat(1 , 1fr);
     }
     
