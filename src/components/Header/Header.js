@@ -5,6 +5,7 @@ const Header = () => {
         <div>
             <h1>Vinta Backpacks</h1>
         </div>
+       
     );
 };
 

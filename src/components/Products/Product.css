@@ -1,0 +1,19 @@
+.product-container{
+    display: flex;
+    margin: 5rem 0px;
+   
+    
+}
+.backpacks-item{
+  flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin-left:5rem ;
+    
+    
+ 
+
+}
+.cart-container{
+    margin-right: 1rem;
+}
