@@ -8,3 +8,10 @@
     width: 5vh;
     border-radius: 30vh;
 }
+.remove-btn {
+    
+    margin: 0px 0px 14px 6px;
+    background: none;
+    border: none;
+    color: aliceblue;
+}

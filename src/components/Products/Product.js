@@ -15,17 +15,30 @@ const Product = () => {
 
     const addToCart = (product) => {
       const newCart = [...cart , product]
+      // const findSameProduct =cart.find((singleProduct)=> {return singleProduct.id === product.id})
+      // // console.log(findSameProduct)
+      // if(product in findSameProduct){
+      //   console.log('hello')
+      // }
+    //  if(product in newCart){
       
-          if (newCart.length >4){
+    //      console.log('hello')
+      
+    //   }
+    if (newCart.length >4){
             return alert("cannot add more than 4 backpacks");
           }
-      
-      
-      setCart(newCart);
 
+      setCart(newCart);
+ 
     }
    const  chooseOne = ()=> {
-  
+    
+  const findOne = cart;
+  const  getOne= findOne[Math.floor(Math.random() *findOne.length)];
+ 
+  setCart([getOne]);
+  // return alert(getOne);
   
 
 
@@ -35,13 +48,23 @@ const Product = () => {
       setCart([]);
     
    }
+   const removeItem = (id) => {
+    // const items = cart[id];
+  //  {
+  //    items.slice(0)
+  //  }
+  // return items;
+  
+ 
+   }
     return (
         <div className=' product-container '>
         <div className='  backpacks-item'>
       
       {
               product.map(item => <Backpack key={item.id} item={item}
-              addToCart={addToCart} > </Backpack>)
+              addToCart={addToCart}> 
+              </Backpack>)
                             
           }
      
@@ -53,8 +76,11 @@ const Product = () => {
         
        {
            cart.map(item=> <Cart
-           key ={item.id}
-             item={item}></Cart>)
+             key ={item.id}
+             item={item}
+             removeItem={removeItem}>
+
+             </Cart>)
        } 
 
            <button onClick={chooseOne}  className='btn btn-outline-success'>Choose one for me </button>

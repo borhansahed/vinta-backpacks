@@ -24,6 +24,8 @@
   max-height: 520px;
     padding: 20px;
     border-radius: 20px;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -33,18 +35,23 @@
     .product-container{
      flex-direction: column;
       
-       
+       margin: 0;
         
     }
     .backpacks-item{
   
       grid-template-columns: repeat(1, 1fr);
+      margin: 0px auto;
      
         
       }
       .cart-container{
+          width:350px;
           margin: 0px auto;
        order:-1;
+      }
+      .cart-container button {
+          font-size: 12px;
       }
 
    

@@ -3,13 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Cart.css'
 
-const Cart = (props) => {
-    // const {name }=props.cart
+const Cart = ({item ,removeItem}) => {
+    const {name, picture }= item
+    // const remove = () => {
+    //    console.log('hello')  
+ 
     return (
         <div className='selected-backpacks'>
-            <img src={props.item.picture}alt="" />
-             <p>{props.item.name}</p>
-             <p><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></p>
+            <img src={picture}alt="" />
+             <p>{name}</p>
+             <button onClick={()=>removeItem(item)} className='remove-btn'><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></button>
             </div>
     );
 };

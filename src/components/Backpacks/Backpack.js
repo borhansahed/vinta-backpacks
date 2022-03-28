@@ -5,7 +5,7 @@ import './Backpacks.css'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Backpack = (props) => {
-    const{addToCart ,item} = props;
+    const{addToCart ,item } = props;
     const {name , price ,picture }=props.item;
    
     return (
@@ -17,7 +17,7 @@ const Backpack = (props) => {
           <h4>{name}</h4>
           
           <p>Price :${price}</p>  
-          <button onClick={()=> addToCart(item)} className='w-100 btn btn-outline-dark btn-cart'><p className='mt-2 me-2' >Add to Cart</p> <FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon>
+          <button onClick={()=> addToCart(item)} className=' btn btn-outline-dark btn-cart'><p className='mt-2 me-2' >Add to Cart</p> <FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon>
            </button>
         
         </div>
