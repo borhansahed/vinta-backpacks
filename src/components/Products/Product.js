@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react';
 import './Product.css'
 import Backpack from '../Backpacks/Backpack';
 import Cart from '../Cart/Cart';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 const Product = () => {
+  const MySwal = withReactContent(Swal);
     const [product , setProduct] = useState([]);
     const [cart , setCart] = useState([]);
 
@@ -14,19 +17,32 @@ const Product = () => {
     },[]);
 
     const addToCart = (product) => {
-      const newCart = [...cart , product]
-      // const findSameProduct =cart.find((singleProduct)=> {return singleProduct.id === product.id})
-      // // console.log(findSameProduct)
-      // if(product in findSameProduct){
-      //   console.log('hello')
-      // }
-    //  if(product in newCart){
+      let newCart = []
+      const exist =cart.find((singleProduct)=> {return singleProduct.id === product.id})
+      // console.log(findSameProduct)
+      if(!exist){
+       newCart = [...cart , product];
+      }
+      else{
+        return (MySwal.fire({
+          icon: 'error',
+           html: <h3>YOU CAN'T ADD SAME BACKPACKS!</h3>,
+           
+         }));
+      }
+    //  if(product){
       
-    //      console.log('hello')
+    //    if (product >2){
+    //      return alert ('cant')
+    //    }
       
     //   }
     if (newCart.length >4){
-            return alert("cannot add more than 4 backpacks");
+            return (MySwal.fire({
+             icon: 'error',
+              html: <h3>YOU CAN'T ADD MORE THAN 4 BACKPACKS!</h3>,
+              
+            }));
           }
 
       setCart(newCart);
