@@ -64,12 +64,9 @@ const Product = () => {
       setCart([]);
     
    }
-   const removeItem = (id) => {
-    // const items = cart[id];
-  //  {
-  //    items.slice(0)
-  //  }
-  // return items;
+   const removeItem = (item) => {
+    const rest = cart.filter(pd => pd.id !== item.id);
+  setCart(rest);
   
  
    }
