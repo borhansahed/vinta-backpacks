@@ -26,7 +26,7 @@ const Product = () => {
       else{
         return (MySwal.fire({
           icon: 'error',
-           html: <h3>YOU CAN'T ADD SAME BACKPACKS!</h3>,
+           html: <h3>SORRY BABY YOU CAN'T ADD SAME BACKPACKS!</h3>,
            
          }));
       }
